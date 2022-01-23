@@ -1,2 +1,0 @@
-(frase) (?P<RememberPhrase>.*)
-(frasi) (?P<RememberPhrase>.*)

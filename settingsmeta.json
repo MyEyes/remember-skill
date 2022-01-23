@@ -1,0 +1,36 @@
+{
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "store_database",
+                "type": "checkbox",
+                "label": "Store information in a database, rather than locally",
+                "value": "false"
+            },
+            {
+                "name": "database_addr",
+                "type": "text",
+                "label": "The address of the remote database server",
+                "value": ""
+            },
+            {
+                "name": "database_name",
+                "type": "text",
+                "label": "The name of the remote database",
+                "value": ""
+            },
+            {
+                "name": "database_user",
+                "type": "text",
+                "label": "The user to authenticate to the database with",
+                "value": ""
+            },
+            {
+                "name": "database_pass",
+                "type": "text",
+                "label": "The password to authenticate to the database with",
+                "value": ""
+            }
+        ]
+    }
+}
