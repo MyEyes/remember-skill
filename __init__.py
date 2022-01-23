@@ -22,6 +22,7 @@ from mycroft.skills.core import MycroftSkill, intent_handler
 from mycroft.util.log import LOG
 from mycroft.audio import wait_while_speaking 
 from mycroft.util.log import getLogger
+from lingua_franca import pronounce_number
 from .information_store import LocalFileInformationStore
 
 logger = getLogger(__name__)
@@ -92,7 +93,7 @@ class rememberSkill(MycroftSkill):
             if len(info) == 1:
                 should_delete = self.ask_user_confirm('delete', {'PHRASE': info[0]})
             else:
-                should_delete = self.ask_user_confirm('deleteMulti', {'NUMBER': len(info)})
+                should_delete = self.ask_user_confirm('deleteMulti', {'NUMBER': pronounce_number(len(info))})
             if should_delete:
                 try:
                     self.information_store.remove_info(rememberPhrase)
