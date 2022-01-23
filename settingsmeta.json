@@ -2,10 +2,11 @@
     "skillMetadata": {
         "sections": [
             {
-                "name": "store_database",
-                "type": "checkbox",
-                "label": "Store information in a database, rather than locally",
-                "value": "false"
+                "name": "store_mode",
+                "type": "select",
+                "label": "How to store information",
+                "options": "Local File|local;Database|database",
+                "value": "local"
             },
             {
                 "name": "database_addr",
@@ -27,7 +28,7 @@
             },
             {
                 "name": "database_pass",
-                "type": "text",
+                "type": "password",
                 "label": "The password to authenticate to the database with",
                 "value": ""
             }
