@@ -22,7 +22,7 @@ from mycroft.skills.core import MycroftSkill, intent_handler
 from mycroft.util.log import LOG
 from mycroft.audio import wait_while_speaking 
 from mycroft.util.log import getLogger
-from lingua_franca import pronounce_number
+from lingua_franca.format import pronounce_number
 from .information_store import LocalFileInformationStore
 
 logger = getLogger(__name__)
