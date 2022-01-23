@@ -1,6 +1,6 @@
 {
     "expected_dialog": "delete",
-    "responses": ["yes"],
+    "response": ["yes"],
     "expected_dialog": "forgotten",
     "evaluation_timeout": "10",
     "intent": {
