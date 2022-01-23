@@ -35,7 +35,7 @@ class LocalFileInformationStore(InformationStore):
         except:
             return []
         if info == None:
-            return alist
+            return alist[:-1] #We always have a trailing empty reminder, so strip that away
         else:
             return [p for p in alist if info in p]
 
