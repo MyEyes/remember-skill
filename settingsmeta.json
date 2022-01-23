@@ -2,35 +2,40 @@
     "skillMetadata": {
         "sections": [
             {
-                "name": "store_mode",
-                "type": "select",
-                "label": "How to store information",
-                "options": "Local File|local;Database|database",
-                "value": "local"
-            },
-            {
-                "name": "database_addr",
-                "type": "text",
-                "label": "The address of the remote database server",
-                "value": ""
-            },
-            {
-                "name": "database_name",
-                "type": "text",
-                "label": "The name of the remote database",
-                "value": ""
-            },
-            {
-                "name": "database_user",
-                "type": "text",
-                "label": "The user to authenticate to the database with",
-                "value": ""
-            },
-            {
-                "name": "database_pass",
-                "type": "password",
-                "label": "The password to authenticate to the database with",
-                "value": ""
+                "name": "Storage",
+                "fields":[
+                    {
+                        "name": "store_mode",
+                        "type": "select",
+                        "label": "How to store information",
+                        "options": "Local File|local;Database|database",
+                        "value": "local"
+                    },
+                    {
+                        "name": "database_addr",
+                        "type": "text",
+                        "label": "The address of the remote database server",
+                        "value": ""
+                    },
+                    {
+                        "name": "database_name",
+                        "type": "text",
+                        "label": "The name of the remote database",
+                        "value": ""
+                    },
+                    {
+                        "name": "database_user",
+                        "type": "text",
+                        "label": "The user to authenticate to the database with",
+                        "value": ""
+                    },
+                    {
+                        "name": "database_pass",
+                        "type": "password",
+                        "label": "The password to authenticate to the database with",
+                        "value": ""
+                    }
+                ]
             }
         ]
     }
